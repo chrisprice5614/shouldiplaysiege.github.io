@@ -4,8 +4,8 @@
     margin: 0;
     outline: none;
   }
-  @font-face { font-family: Scout; src: url('/font/Scout-Thin.otf'); } 
-  @font-face { font-family: BoldS; src: url('/font/ScoutCond-light.otf'); } 
+  @font-face { font-family: Scout; src: url('font/Scout-Thin.otf'); } 
+  @font-face { font-family: BoldS; src: url('font/ScoutCond-light.otf'); } 
 
   body{
     font-family: Scout;
