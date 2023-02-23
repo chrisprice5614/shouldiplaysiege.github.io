@@ -4,16 +4,25 @@
     margin: 0;
     outline: none;
   }
-  @font-face { font-family: Scout; src: url('./font/Scout-Thin.otf'); font-weight:400;
-	font-style:normal;
-	font-display:fallback;} 
-  @font-face { font-family: BoldS; src: url('./font/ScoutCond-Light.otf'); 
-    font-weight:400;
-    font-style:normal;
-	font-display:fallback;} 
+  @font-face {
+    font-family: "ScoutCond";
+    src: url('./font/ScoutCond-Light.woff2') format('woff2'),
+        url('./font/ScoutCond-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Scout";
+    src: url('./font/Scout-Thin.woff2') format('woff2'),
+        url('./font/Scout-Thin.woff') format('woff');
+    font-weight: 50;
+    font-style: normal;
+    font-display: swap;
+}
 
   body{
-    font-family: Scout;
+    font-family: "ScoutCond";
     min-height: 100vh;
     overflow: hidden;
     background: rgb(60,60,242);
@@ -29,7 +38,7 @@
   }
 
   h1{
-    font-family: BoldS;
+    font-family: "Scout";
     font-size: 64pt;
   }
   
@@ -146,9 +155,14 @@
   }
 
   .credits{
+    font-size: 16pt;
     color: FFF;
-	  padding: 5px;
-	  background-color: #333;
+    padding: 5px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
   }
 
   .credits a{
