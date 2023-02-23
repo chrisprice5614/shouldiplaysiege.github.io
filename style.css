@@ -147,6 +147,8 @@
 
   .credits{
     color: FFF;
+	  padding: 5px;
+	  background-color: #333;
   }
 
   .credits a{
